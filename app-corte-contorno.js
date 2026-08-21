@@ -63,4 +63,9 @@ document.querySelectorAll('.finish-toggle').forEach(button=>button.addEventListe
 function calculatePrice(){const q=+document.querySelector('#quoteQty').value,w=+document.querySelector('#quoteWidth').value,h=+document.querySelector('#quoteHeight').value;if(currentMaterial&&q&&w&&h){const useLonaFinish=currentMaterial.isLonaFront&&lonaFinishes.size>0,useContour=contourActive&&currentMaterial.category==='flexiveis'&&!currentMaterial.isLonaFront,minimum=currentMaterial.minimum??(currentMaterial.isLonaFront?(useLonaFinish?50:35):(useContour?40:25));let rate=useLonaFinish?50:(useContour?contourRates[currentMaterial.name]:currentMaterial.rate);if(currentMaterial.category==='rigidos'&&doubleSideActive)rate+=currentMaterial.doubleSideRate??0;const calculated=currentMaterial.pricingMode==='linear'?(h*q*rate)/100:(w*h*q*rate)/10000,total=Math.max(minimum,calculated);document.querySelector('#quotePrice').value=total.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}else document.querySelector('#quotePrice').value='Sob consulta'}
 document.querySelector('#quoteForm').addEventListener('submit',e=>{e.preventDefault();closeModal();const toast=document.querySelector('#toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),4000)});
 document.querySelector('#headerQuote').addEventListener('click',()=>{document.querySelector('#catalogo').scrollIntoView({behavior:'smooth'});search.focus()});
+const headerSectionLinks=document.querySelectorAll('.topbar nav a[href^="#"]');
+headerSectionLinks.forEach(link=>link.addEventListener('click',()=>{
+  headerSectionLinks.forEach(item=>item.classList.remove('active'));
+  link.classList.add('active');
+}));
 render();
