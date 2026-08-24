@@ -1,0 +1,90 @@
+const materials = [
+  {name:'PS 1mm',category:'rigidos',label:'Rígido · Poliestireno',accent:'#00d8e8',print:'UV direto · 4x0',size:'100 × 200 cm',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, CDR',desc:'Chapa leve e versátil para sinalização interna, displays, testeiras e comunicação de ponto de venda. Excelente definição de impressão e corte preciso.',image:'rigidos/ps%201mm.png',rate:120,doubleSideRate:75,rigidContourRate:8,minimum:60},
+  {name:'PS 2mm',category:'rigidos',label:'Rígido · Poliestireno',accent:'#00d8e8',print:'UV direto · 4x0 / 4x4',size:'100 × 200 cm',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, CDR',desc:'Mais estrutura para placas, displays e peças promocionais. Superfície uniforme, ótima aderência de tinta e acabamento profissional.',image:'rigidos/ps%202mm.png',rate:152,doubleSideRate:66,rigidContourRate:8,minimum:60},
+  {name:'PVC 3mm',category:'rigidos',label:'Rígido · PVC Expandido',accent:'#f00073',print:'UV direto · alta definição',size:'122 × 244 cm',deadline:'3 a 5 dias úteis',files:'PDF, AI, EPS, CDR',desc:'Material resistente e leve para sinalização, cenografia e PDV. Aceita corte especial e mantém ótimo desempenho em ambientes internos.',image:'rigidos/pvc%203mm.png',rate:152,doubleSideRate:71,rigidContourRate:8,minimum:60},
+  {name:'PVC 5mm',category:'rigidos',label:'Rígido · PVC Expandido',accent:'#f00073',print:'UV direto · alta definição',size:'122 × 244 cm',deadline:'3 a 5 dias úteis',files:'PDF, AI, EPS, CDR',desc:'Chapa robusta para projetos que exigem maior estabilidade. Indicada para painéis, letras, sinalização e estruturas promocionais.',image:'rigidos/pvc%205mm.png',rate:164,doubleSideRate:49,rigidContourRate:8,minimum:60},
+  {name:'Polionda',category:'rigidos',label:'Rígido · Polipropileno',accent:'#ffd600',print:'UV direto · 4x0',size:'130 × 200 cm',deadline:'2 a 3 dias úteis',files:'PDF, AI, CDR',desc:'Leve, econômico e resistente à umidade. Uma solução eficiente para placas temporárias, campanhas e sinalização imobiliária.',image:'rigidos/polionda.png',rate:105,doubleSideRate:65,rigidContourRate:5,minimum:60},
+  {name:'Capacho',category:'rigidos',label:'Rígido · Vinil',accent:'#ffd600',print:'UV · recorte personalizado',size:'120 × 250 cm',deadline:'5 a 7 dias úteis',files:'PDF, AI, CDR',desc:'Capacho vinílico personalizado para entradas comerciais. Impressão resistente, superfície lavável e recorte sob medida.',image:'rigidos/capacho.png',rate:190,minimum:80},
+  {name:'Acrílico 2mm',category:'rigidos',label:'Rígido · Acrílico',accent:'#00d8e8',print:'UV · branco localizado',size:'200 × 100 cm',deadline:'5 a 8 dias úteis',files:'PDF, AI, EPS',desc:'Chapa de acrílico com acabamento premium, brilho, transparência e precisão. Ideal para placas, displays, letras e projetos de sinalização sofisticados.',image:'rigidos/acrilico%202mm.png',rate:322,minimum:80},
+  {name:'Acrílico 3mm',category:'rigidos',label:'Rígido · Acrílico',accent:'#00d8e8',print:'UV · branco localizado',size:'200 × 100 cm',deadline:'5 a 8 dias úteis',files:'PDF, AI, EPS',desc:'Chapa de acrílico com acabamento premium, brilho, transparência e precisão. Ideal para placas, displays, letras e projetos de sinalização sofisticados.',image:'rigidos/Acrilico%203mm.png',rate:412,minimum:80},
+  {name:'Acrílico 4mm',category:'rigidos',label:'Rígido · Acrílico',accent:'#00d8e8',print:'UV · branco localizado',size:'200 × 100 cm',deadline:'5 a 8 dias úteis',files:'PDF, AI, EPS',desc:'Chapa de acrílico com acabamento premium, brilho, transparência e precisão. Ideal para placas, displays, letras e projetos de sinalização sofisticados.',image:'rigidos/acrilico%204mm.png',rate:462,minimum:80},
+  {name:'Adesivo Brilho ou Fosco',category:'flexiveis',label:'Flexível · Vinil',accent:'#00d8e8',print:'Eco solvente · alta definição',size:'103, 124 ou 150 cm × contínuo',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Vinil autoadesivo disponível com acabamento brilhante ou fosco. A largura de 150 cm está sujeita à consulta de estoque.',image:'imagens%20flexiveis/adesivo%20brilho%20ou%20fosco.png',rate:35},
+  {name:'Adesivo Transparente',category:'flexiveis',label:'Flexível · Vinil',accent:'#f00073',print:'Eco solvente · alta definição',size:'103 ou 124 cm × contínuo',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Filme transparente para aplicação em vidros, acrílicos e outras superfícies que pedem passagem de luz.',image:'imagens%20flexiveis/adesivo%20transparente.png',rate:35},
+  {name:'Adesivo Jateado',category:'flexiveis',label:'Flexível · Vinil',accent:'#ffd600',print:'Eco solvente · alta definição',size:'98 ou 118 cm × contínuo',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Adesivo com efeito jateado para privacidade e decoração de vidros, divisórias e vitrines.',image:'imagens%20flexiveis/adesivo%20jateado.png',rate:35},
+  {name:'Adesivo Perfurado',category:'flexiveis',label:'Flexível · Vinil',accent:'#00d8e8',print:'Eco solvente · alta definição',size:'134 cm × contínuo',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Vinil perfurado indicado para comunicação visual em vidros, mantendo visibilidade pelo lado interno.',image:'imagens%20flexiveis/adesivo%20perfurado.png',rate:48},
+  {name:'Adesivo Automotivo',category:'flexiveis',label:'Flexível · Vinil',accent:'#f00073',print:'Eco solvente · alta definição',size:'134 cm × contínuo (consultar estoque)',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Vinil indicado para personalização e comunicação visual automotiva. Disponibilidade sujeita à consulta de estoque.',image:'imagens%20flexiveis/adesivo%20automotivo.png',rate:60},
+  {name:'Adesivo Blackout Brilho ou Fosco',category:'flexiveis',label:'Flexível · Vinil',accent:'#ffd600',print:'Eco solvente · alta definição',size:'103, 124 ou 150 cm × contínuo',deadline:'2 a 4 dias úteis',files:'PDF/X-1a, AI, TIFF',desc:'Vinil opaco com acabamento brilhante ou fosco, ideal para bloquear a visualização da superfície. A largura de 150 cm está sujeita à consulta de estoque.',image:'imagens%20flexiveis/adesivo%20blackout%20e%20fosco.png',rate:35}
+  ,{name:'Lona Front',category:'flexiveis',label:'Flexível · Lona',accent:'#00d8e8',print:'Eco solvente · brilho ou fosca',size:'317 cm × contínuo',deadline:'1 a 4 dias úteis',files:'PDF, AI, PSD, CDR, EPS, TIFF, PNG e JPG',desc:'Lona front com acabamento brilhante ou fosco, indicada para banners, faixas, fachadas e comunicação visual. Disponível com solda e ilhós ou acabamento para banner e faixa.',image:'imagens%20flexiveis/lona%20front%20certa.png',rate:35,isLonaFront:true},
+  {name:'Lona Backlight',category:'flexiveis',label:'Flexível · Lona translúcida',accent:'#f00073',print:'Eco solvente · alta definição',size:'317 cm × contínuo',deadline:'1 a 4 dias úteis',files:'PDF, AI, PSD, CDR, EPS, TIFF, PNG e JPG',desc:'Lona translúcida para caixas de luz, painéis iluminados e comunicação visual backlight, com distribuição uniforme da iluminação.',image:'imagens%20flexiveis/lona%20back.png',rate:58,minimum:40,isLonaFront:true,finishRate:73},
+  {name:'Backlight Film',category:'flexiveis',label:'Flexível · Filme translúcido',accent:'#f00073',print:'Eco solvente · alta definição',size:'134 cm × contínuo',deadline:'1 a 4 dias úteis',files:'PDF, AI, PSD, CDR, EPS, TIFF, PNG e JPG',desc:'Filme translúcido para comunicação visual iluminada, ideal para painéis, caixas de luz e displays backlight.',image:'imagens%20flexiveis/backlightfilm.png',rate:100,minimum:60},
+  {name:'Ímã Adesivado',category:'flexiveis',label:'Flexível · Ímã',accent:'#ffd600',print:'Eco solvente · alta definição',size:'57 cm × contínuo',deadline:'1 a 4 dias úteis',files:'PDF, AI, PSD, CDR, EPS, TIFF, PNG e JPG',desc:'Ímã adesivado para comunicação visual removível, com opção de corte e contorno para formatos personalizados.',image:'imagens%20flexiveis/%C3%ADm%C3%A3.png',rate:230,minimum:100}
+];
+
+materials.sort((a, b) => Number(b.category === 'flexiveis') - Number(a.category === 'flexiveis'));
+
+materials.forEach((material) => {
+  material.deadline = '1 a 4 dias úteis';
+  material.files = 'PDF, AI, PSD, CDR, EPS, TIFF, PNG e JPG';
+});
+
+const contourRates = {
+  'Adesivo Brilho ou Fosco': 55,
+  'Adesivo Transparente': 55,
+  'Adesivo Jateado': 70,
+  'Adesivo Perfurado': 60,
+  'Adesivo Automotivo': 70,
+  'Adesivo Blackout Brilho ou Fosco': 55,
+  'Backlight Film': 110,
+  'Ímã Adesivado': 255
+};
+
+const varnishMaterials = new Set([
+  'Adesivo Brilho ou Fosco',
+  'Adesivo Transparente',
+  'Adesivo Automotivo',
+  'Adesivo Blackout Brilho ou Fosco',
+  'Lona Front'
+]);
+const laminationMaterials = new Set([
+  'Adesivo Brilho ou Fosco',
+  'Adesivo Transparente',
+  'Adesivo Automotivo',
+  'Adesivo Blackout Brilho ou Fosco'
+]);
+const varnishRate = 19;
+const laminationRate = 24;
+
+const grid=document.querySelector('#materialGrid'), search=document.querySelector('#searchInput'), count=document.querySelector('#resultCount'), empty=document.querySelector('#emptyState');
+let activeFilter='todos', currentMaterial=null, contourActive=false, varnishActive=false, laminationActive=false, doubleSideActive=false, lonaFinishes=new Set();
+function render(){
+  document.querySelector('[data-filter="todos"] sup').textContent=materials.length;
+  document.querySelector('[data-filter="rigidos"] sup').textContent=materials.filter(m=>m.category==='rigidos').length;
+  document.querySelector('[data-filter="flexiveis"] sup').textContent=materials.filter(m=>m.category==='flexiveis').length;
+  const term=search.value.toLocaleLowerCase('pt-BR').trim();
+  const filtered=materials.filter(m=>(activeFilter==='todos'||m.category===activeFilter)&&`${m.name} ${m.label} ${m.print} ${m.desc}`.toLocaleLowerCase('pt-BR').includes(term));
+  grid.innerHTML=filtered.map((m)=>{const original=materials.indexOf(m);return `<button class="material-card" style="--accent:${m.accent};animation-delay:${Math.min(original*.035,.25)}s" data-id="${original}" aria-label="Ver detalhes de ${m.name}"><div class="card-image"><img src="${m.image}" alt="Aplicação visual de ${m.name}" loading="lazy"><span class="card-index">${String(original+1).padStart(2,'0')}</span><span class="card-arrow">↗</span></div><div class="card-info"><small>${m.label.toUpperCase()}</small><h3>${m.name}</h3><div class="card-meta"><span>${m.size}</span><span>${m.deadline}</span></div></div></button>`}).join('');
+  count.textContent=`${filtered.length} ${filtered.length===1?'material disponível':'materiais disponíveis'}`; empty.hidden=filtered.length>0; grid.hidden=filtered.length===0;
+}
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelector('.filter.active').classList.remove('active');btn.classList.add('active');activeFilter=btn.dataset.filter;render()}));
+search.addEventListener('input',render); document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus()}if(e.key==='Escape')closeModal()});
+grid.addEventListener('click',e=>{const card=e.target.closest('.material-card');if(card)openModal(+card.dataset.id)});
+const modal=document.querySelector('#detailModal');
+function resetContourOption(material){contourActive=false;varnishActive=false;laminationActive=false;doubleSideActive=false;lonaFinishes.clear();const option=document.querySelector('#contourOption'),button=document.querySelector('#contourToggle'),varnishOption=document.querySelector('#varnishOption'),varnishButton=document.querySelector('#varnishToggle'),laminationOption=document.querySelector('#laminationOption'),laminationButton=document.querySelector('#laminationToggle'),finishOptions=document.querySelector('#lonaFinishOptions'),rigidOptions=document.querySelector('#rigidOptions'),hasRigidOptions=material.category==='rigidos'&&material.doubleSideRate!=null;option.hidden=material.category!=='flexiveis'||material.isLonaFront;varnishOption.hidden=!varnishMaterials.has(material.name);laminationOption.hidden=!laminationMaterials.has(material.name);document.querySelector('#laminationLabel').textContent=material.name==='Adesivo Transparente'?'Laminação Branca':'Laminação Transparente ou Jateada';finishOptions.hidden=!material.isLonaFront;rigidOptions.hidden=!hasRigidOptions;button.classList.remove('active');button.setAttribute('aria-pressed','false');varnishButton.classList.remove('active');varnishButton.setAttribute('aria-pressed','false');laminationButton.classList.remove('active');laminationButton.setAttribute('aria-pressed','false');const doubleSideToggle=document.querySelector('#doubleSideToggle');doubleSideToggle.classList.remove('active');doubleSideToggle.setAttribute('aria-pressed','false');document.querySelector('#doubleSidePrice').textContent='Adicionar impressão no verso';document.querySelectorAll('.finish-toggle').forEach(toggle=>{toggle.classList.remove('active');toggle.setAttribute('aria-pressed','false')})}
+function openModal(id){const m=materials[id];currentMaterial=m;resetContourOption(m);document.querySelector('#detailImage').src=m.image;document.querySelector('#detailImage').alt=`Aplicação de ${m.name}`;document.querySelector('#detailIndex').textContent=`${String(id+1).padStart(2,'0')} / ${materials.length}`;document.querySelector('#detailCategory').textContent=m.label;document.querySelector('#detailTitle').textContent=m.name;document.querySelector('#detailDescription').textContent=m.desc;document.querySelector('#specPrint').textContent=m.print;document.querySelector('#specSize').textContent=m.size;document.querySelector('#specDeadline').textContent=m.deadline;document.querySelector('#specFiles').textContent=m.files;document.querySelector('.detail-label small').style.color=m.accent;document.querySelector('.quote-form').style.borderColor=m.accent;document.querySelector('#quotePrice').value='Sob consulta';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(()=>document.querySelector('.close-btn').focus(),300)}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+document.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',closeModal));
+['quoteQty','quoteWidth','quoteHeight'].forEach(id=>document.querySelector(`#${id}`).addEventListener('input',calculatePrice));
+document.querySelector('#contourToggle').addEventListener('click',()=>{contourActive=!contourActive;const button=document.querySelector('#contourToggle');button.classList.toggle('active',contourActive);button.setAttribute('aria-pressed',String(contourActive));calculatePrice()});
+document.querySelector('#varnishToggle').addEventListener('click',()=>{varnishActive=!varnishActive;const button=document.querySelector('#varnishToggle');button.classList.toggle('active',varnishActive);button.setAttribute('aria-pressed',String(varnishActive));calculatePrice()});
+document.querySelector('#laminationToggle').addEventListener('click',()=>{laminationActive=!laminationActive;const button=document.querySelector('#laminationToggle');button.classList.toggle('active',laminationActive);button.setAttribute('aria-pressed',String(laminationActive));calculatePrice()});
+document.querySelector('#doubleSideToggle').addEventListener('click',()=>{doubleSideActive=!doubleSideActive;const button=document.querySelector('#doubleSideToggle');button.classList.toggle('active',doubleSideActive);button.setAttribute('aria-pressed',String(doubleSideActive));calculatePrice()});
+document.querySelectorAll('.finish-toggle').forEach(button=>button.addEventListener('click',()=>{const finish=button.dataset.finish;if(lonaFinishes.has(finish))lonaFinishes.delete(finish);else lonaFinishes.add(finish);const active=lonaFinishes.has(finish);button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));calculatePrice()}));
+function calculatePrice(){const q=+document.querySelector('#quoteQty').value,w=+document.querySelector('#quoteWidth').value,h=+document.querySelector('#quoteHeight').value;if(currentMaterial&&q&&w&&h){const useLonaFinish=currentMaterial.isLonaFront&&lonaFinishes.size>0,useContour=contourActive&&currentMaterial.category==='flexiveis'&&!currentMaterial.isLonaFront,useVarnish=varnishActive&&varnishMaterials.has(currentMaterial.name),useLamination=laminationActive&&laminationMaterials.has(currentMaterial.name),baseMinimum=currentMaterial.minimum??(currentMaterial.isLonaFront?(useLonaFinish?50:35):(useContour?40:25)),minimum=useLamination?Math.max(80,baseMinimum):baseMinimum;let rate=useLonaFinish?(currentMaterial.finishRate??50):(useContour?contourRates[currentMaterial.name]:currentMaterial.rate);if(useVarnish)rate+=varnishRate;if(useLamination)rate+=laminationRate;if(currentMaterial.category==='rigidos'&&doubleSideActive)rate+=currentMaterial.doubleSideRate??0;const calculated=currentMaterial.pricingMode==='linear'?(h*q*rate)/100:(w*h*q*rate)/10000,total=Math.max(minimum,calculated);document.querySelector('#quotePrice').value=total.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}else document.querySelector('#quotePrice').value='Sob consulta'}
+document.querySelector('#quoteForm').addEventListener('submit',e=>{e.preventDefault();closeModal();const toast=document.querySelector('#toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),4000)});
+document.querySelector('#headerQuote').addEventListener('click',()=>{document.querySelector('#catalogo').scrollIntoView({behavior:'smooth'});search.focus()});
+const headerSectionLinks=document.querySelectorAll('.topbar nav a[href^="#"]');
+headerSectionLinks.forEach(link=>link.addEventListener('click',()=>{
+  headerSectionLinks.forEach(item=>item.classList.remove('active'));
+  link.classList.add('active');
+}));
+render();

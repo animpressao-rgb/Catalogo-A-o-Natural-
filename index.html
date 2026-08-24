@@ -108,11 +108,25 @@
         </dl>
         <form class="quote-form" id="quoteForm">
           <div class="form-title"><div><span class="eyebrow">COTAÇÃO RÁPIDA</span><h3>Configure seu pedido</h3></div><span>Resposta em até 2h úteis</span></div>
-          <div class="contour-option" id="contourOption" hidden>
-            <button type="button" id="contourToggle" aria-pressed="false">
-              <i aria-hidden="true"></i>
-              <span><strong>Corte e contorno</strong><small>Adicionar acabamento</small></span>
-            </button>
+          <div class="finishing-options-row">
+            <div class="contour-option" id="contourOption" hidden>
+              <button type="button" id="contourToggle" aria-pressed="false">
+                <i aria-hidden="true"></i>
+                <span><strong>Corte e contorno</strong><small>Adicionar acabamento</small></span>
+              </button>
+            </div>
+            <div class="contour-option" id="varnishOption" hidden>
+              <button type="button" id="varnishToggle" aria-pressed="false">
+                <i aria-hidden="true"></i>
+                <span><strong>Verniz</strong><small>Adicionar acabamento</small></span>
+              </button>
+            </div>
+            <div class="contour-option" id="laminationOption" hidden>
+              <button type="button" id="laminationToggle" aria-pressed="false">
+                <i aria-hidden="true"></i>
+                <span><strong id="laminationLabel">Laminação Transparente ou Jateada</strong><small>Adicionar acabamento</small></span>
+              </button>
+            </div>
           </div>
           <div class="contour-option rigid-options" id="rigidOptions" hidden>
             <button type="button" id="doubleSideToggle" aria-pressed="false">
@@ -145,6 +159,10 @@
     </article>
   </div>
   <div class="toast" id="toast" role="status"><b>✓</b><span><strong>Solicitação preparada</strong><small>Nossa equipe entrará em contato.</small></span></div>
-  <script src="app-corte-contorno.js"></script>
+  <style>
+    .finishing-options-row{display:flex;align-items:flex-start;gap:32px;flex-wrap:wrap}
+    .finishing-options-row .contour-option{margin:20px 0 6px}
+  </style>
+  <script src="app-backlight-validacao.js"></script>
 </body>
 </html>
