@@ -29,7 +29,7 @@ materials.forEach((material) => {
 const contourRates = {
   'Adesivo Brilho ou Fosco': 55,
   'Adesivo Transparente': 55,
-  'Adesivo Jateado': 70,
+  'Adesivo Jateado': 55,
   'Adesivo Perfurado': 60,
   'Adesivo Automotivo': 70,
   'Adesivo Blackout Brilho ou Fosco': 55,
