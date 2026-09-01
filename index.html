@@ -160,6 +160,15 @@
             </div>
           </div>
           <div class="form-row">
+            <div class="recorte-options" id="recorteOptions" hidden>
+              <span>Escolha o material</span>
+              <div>
+                <button type="button" class="recorte-toggle" data-rate="30" aria-pressed="false"><i aria-hidden="true"></i><span><strong>Branco brilho ou fosco</strong></span></button>
+                <button type="button" class="recorte-toggle" data-rate="40" aria-pressed="false"><i aria-hidden="true"></i><span><strong>Preto brilho ou fosco</strong></span></button>
+                <button type="button" class="recorte-toggle" data-rate="45" aria-pressed="false"><i aria-hidden="true"></i><span><strong>Jateado ou transparente</strong></span></button>
+              </div>
+              <p class="recorte-warning"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Não inclui depilação do material.</p>
+            </div>
             <label>Quantidade<input id="quoteQty" type="number" min="1" value="1" required></label>
             <label>Largura (cm)<input id="quoteWidth" type="number" min="1" placeholder="100" required></label>
             <label>Altura (cm)<input id="quoteHeight" type="number" min="1" placeholder="70" required></label>
