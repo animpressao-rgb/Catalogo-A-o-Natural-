@@ -122,6 +122,20 @@
   }
 }
 
+@media (max-width: 720px) {
+  .topbar {
+    justify-content: center;
+  }
+
+  .topbar .quote-link {
+    display: none;
+  }
+
+  .topbar .brand-logo {
+    object-position: center;
+  }
+}
+
 @media (max-width: 430px) {
   .brand-logo {
     width: 126px;
