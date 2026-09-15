@@ -50,6 +50,7 @@ function Get-DataUri([string]$relativePath, [switch]$OptimizePhoto) {
   }
 
   $mime = switch ($extension) {
+    '.webp' { 'image/webp' }
     '.png' { 'image/png' }
     '.jpg' { 'image/jpeg' }
     '.jpeg' { 'image/jpeg' }
@@ -95,12 +96,13 @@ foreach ($file in $cssFiles) {
 }
 $html = $html.Replace('</head>', "  <style>`n$css`n  </style>`n</head>")
 
-$logoUri = Get-DataUri 'logo-acnatural-web.png'
+$logoUri = Get-DataUri 'optimized/logo-acnatural-web-570.webp'
 $machineUri = Get-DataUri 'maquina.jpeg'
-$html = $html.Replace('src="logo-acnatural-web.png"', ('src="' + $logoUri + '"'))
+$html = $html.Replace('src="optimized/logo-acnatural-web-570.webp"', ('src="' + $logoUri + '"'))
 $html = $html.Replace('src="maquina.jpeg"', ('src="' + $machineUri + '"'))
 
 $script = Read-Utf8 (Join-Path $root 'app-corte-contorno.js')
+$script = [regex]::Replace($script, ",imageSmall:'[^']+',imageSet:'[^']+'", '')
 $imageMatches = [regex]::Matches($script, "image:'([^']+)'")
 $imagePaths = $imageMatches | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
 $imageUris = @{}

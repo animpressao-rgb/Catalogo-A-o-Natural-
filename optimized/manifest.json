@@ -1,0 +1,638 @@
+[
+  {
+    "original": "imagens flexiveis/adesivo automotivo.png",
+    "original_bytes": 1895714,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "a8f954d245d6e9b9421e09021114c3138f99568af59cec9790aa74a3275a0254",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-automotivo-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 25062
+      },
+      {
+        "path": "optimized/adesivo-automotivo-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 59708
+      },
+      {
+        "path": "optimized/adesivo-automotivo-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 119224
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivo blackout e fosco.png",
+    "original_bytes": 1808643,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "623a1f267830577a14bbc87ade5276f3863c8c06f2568fe668f76b78057d6549",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-blackout-e-fosco-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 21864
+      },
+      {
+        "path": "optimized/adesivo-blackout-e-fosco-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 49350
+      },
+      {
+        "path": "optimized/adesivo-blackout-e-fosco-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 86704
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivo brilho ou fosco.png",
+    "original_bytes": 1971530,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "f3c6881d00602bb854fa857833030f71168f7b81f2959eb43918e3d2830a54f3",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-brilho-ou-fosco-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19620
+      },
+      {
+        "path": "optimized/adesivo-brilho-ou-fosco-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 59166
+      },
+      {
+        "path": "optimized/adesivo-brilho-ou-fosco-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 123614
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivo jateado.png",
+    "original_bytes": 2355211,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "535eba6e661a569d9fc77e1f310345dec6a66cfb57ee187f93035da36fd3462f",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-jateado-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 22360
+      },
+      {
+        "path": "optimized/adesivo-jateado-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 85484
+      },
+      {
+        "path": "optimized/adesivo-jateado-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 223250
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivo perfurado.png",
+    "original_bytes": 3542801,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "ef1a18899b2856331ab322e3bc729b95f77f630edc4d531a0458642cfdc3a1f0",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-perfurado-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 89370
+      },
+      {
+        "path": "optimized/adesivo-perfurado-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 320954
+      },
+      {
+        "path": "optimized/adesivo-perfurado-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 639248
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivo transparente.png",
+    "original_bytes": 1915089,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "6f624e9d1e7504a0b705ecac52099414364fcfdebce163b36fb665ff2e7c4fbd",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivo-transparente-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23640
+      },
+      {
+        "path": "optimized/adesivo-transparente-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 61102
+      },
+      {
+        "path": "optimized/adesivo-transparente-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 113196
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/adesivos recorte.png",
+    "original_bytes": 2076449,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "a3acf4d847c7ff4f4b76b5585d4be30846118a2d377cac8c829f170d364f5478",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/adesivos-recorte-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 30868
+      },
+      {
+        "path": "optimized/adesivos-recorte-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 80798
+      },
+      {
+        "path": "optimized/adesivos-recorte-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 155492
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/backlightfilm.png",
+    "original_bytes": 1944732,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "e8d429ba3eacdf6abd4bdeabb09c23161bcb783d3ba9a6d1fb47638df16c9796",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/backlightfilm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23810
+      },
+      {
+        "path": "optimized/backlightfilm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 58476
+      },
+      {
+        "path": "optimized/backlightfilm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 121228
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/lona back.png",
+    "original_bytes": 2052998,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "b3af83122f271cee037b88353813efed61c1b73efadb6d096857653f34d91266",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/lona-back-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 26592
+      },
+      {
+        "path": "optimized/lona-back-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 81214
+      },
+      {
+        "path": "optimized/lona-back-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 187806
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/lona front certa.png",
+    "original_bytes": 2529384,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "4633f0f25c36c718317d3bb47c7f64694dcdb375e41c54475abaa0492b3cbd88",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/lona-front-certa-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 41466
+      },
+      {
+        "path": "optimized/lona-front-certa-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 139318
+      },
+      {
+        "path": "optimized/lona-front-certa-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 331262
+      }
+    ]
+  },
+  {
+    "original": "imagens flexiveis/ímã.png",
+    "original_bytes": 1920988,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "42b5fe037d019f659490ac100370e04cbd08238471ebbc90406033b7a150b019",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/ima-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 20556
+      },
+      {
+        "path": "optimized/ima-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 51410
+      },
+      {
+        "path": "optimized/ima-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 112046
+      }
+    ]
+  },
+  {
+    "original": "rigidos/Acrilico 3mm.png",
+    "original_bytes": 2336866,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "ec1b38e0e08e8e70eecf065d5671518edff15f71c920d61f5e814ea3afc52056",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/acrilico-3mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 49500
+      },
+      {
+        "path": "optimized/acrilico-3mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 146236
+      },
+      {
+        "path": "optimized/acrilico-3mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 287312
+      }
+    ]
+  },
+  {
+    "original": "rigidos/acrilico 2mm.png",
+    "original_bytes": 2603485,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "ff21259dcf1fb058251f16c9156262d9ef4a67be85e96c91b279a910cc332cfc",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/acrilico-2mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 52386
+      },
+      {
+        "path": "optimized/acrilico-2mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 167952
+      },
+      {
+        "path": "optimized/acrilico-2mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 356872
+      }
+    ]
+  },
+  {
+    "original": "rigidos/acrilico 4mm.png",
+    "original_bytes": 2270097,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "79ae9c42d205820abc6bbefc8b06444ed2f43524e1e7abfa0b9cec487248a518",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/acrilico-4mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 51526
+      },
+      {
+        "path": "optimized/acrilico-4mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 146476
+      },
+      {
+        "path": "optimized/acrilico-4mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 278568
+      }
+    ]
+  },
+  {
+    "original": "rigidos/capacho.png",
+    "original_bytes": 2879910,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "9d081e1f6b17316ebe215d0f37d9e7b48c110576cf86d8c77a2c3659fe021b31",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/capacho-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 57228
+      },
+      {
+        "path": "optimized/capacho-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 201418
+      },
+      {
+        "path": "optimized/capacho-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 434070
+      }
+    ]
+  },
+  {
+    "original": "rigidos/polionda.png",
+    "original_bytes": 2293518,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "0a14680f9f2b8d47ed634f7b56e08a0914891ac1b0a2bf3037fd70d7e0dffeb2",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/polionda-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 46604
+      },
+      {
+        "path": "optimized/polionda-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 137080
+      },
+      {
+        "path": "optimized/polionda-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 257748
+      }
+    ]
+  },
+  {
+    "original": "rigidos/ps 1mm.png",
+    "original_bytes": 2509845,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "622a4538d9551fc7fb95aed8584ac6dc9d2675b96c6d11e0a817c3963e4fc971",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/ps-1mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 51906
+      },
+      {
+        "path": "optimized/ps-1mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 166848
+      },
+      {
+        "path": "optimized/ps-1mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 346944
+      }
+    ]
+  },
+  {
+    "original": "rigidos/ps 2mm.png",
+    "original_bytes": 2448148,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "e7031894205b2c26e6eb8786b16fbaa3e576e32e439f21dafbc8d13f4cb58d8e",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/ps-2mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 50100
+      },
+      {
+        "path": "optimized/ps-2mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 156728
+      },
+      {
+        "path": "optimized/ps-2mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 323786
+      }
+    ]
+  },
+  {
+    "original": "rigidos/pvc 3mm.png",
+    "original_bytes": 2263817,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "970e9a5e15c2361bceb814a4c8ff5af9b3d98f35db66d34845e4a7ac0f837333",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/pvc-3mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 41958
+      },
+      {
+        "path": "optimized/pvc-3mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 127104
+      },
+      {
+        "path": "optimized/pvc-3mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 242352
+      }
+    ]
+  },
+  {
+    "original": "rigidos/pvc 5mm.png",
+    "original_bytes": 2198314,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "e7119eb2aa8ab7d6cfd164266f0823b68b0fa5251e06c32550e385a070f149af",
+    "kind": "product",
+    "variants": [
+      {
+        "path": "optimized/pvc-5mm-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 42628
+      },
+      {
+        "path": "optimized/pvc-5mm-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 124546
+      },
+      {
+        "path": "optimized/pvc-5mm-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 237500
+      }
+    ]
+  },
+  {
+    "original": "logo-acnatural-web.png",
+    "original_bytes": 61620,
+    "original_dimensions": [
+      1421,
+      703
+    ],
+    "sha256": "93f9beb4945badbf6e0a28e289a4830a4ee6fb1b06220dbd65cc2d35e224474b",
+    "kind": "logo",
+    "variants": [
+      {
+        "path": "optimized/logo-acnatural-web-570.webp",
+        "width": 570,
+        "height": 282,
+        "bytes": 33598
+      }
+    ]
+  },
+  {
+    "original": "maquina.jpeg",
+    "original_bytes": 71148,
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "sha256": "682de49bdc70690e752f5b2b4fea6fac517584dfba27cd706d15f2c0e0024b8a",
+    "kind": "hero",
+    "variants": [
+      {
+        "path": "maquina.jpeg",
+        "width": 853,
+        "height": 1280,
+        "bytes": 71148
+      }
+    ]
+  }
+]
